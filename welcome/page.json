@@ -1,4 +1,5 @@
 {
   "name": "Welcome",
-  "path": "welcome"
+  "path": "welcome",
+  "theme": "Default"
 }
