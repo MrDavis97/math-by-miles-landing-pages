@@ -1,3 +1,13 @@
+<!-- Hamburger menu HTML for mobile-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://mathbymiles.com/welcome#how-it-works" class="links">how it works</a>
+  <a href="/s/prod_J1IfcowxsGw8Fd" class="links">pricing</a>
+  <a href="/pub/become-a-tutor" class="links">become a tutor</a>
+</div>
+
+<div id=dim></div>
+
 <header class="landing-header">
   <div class="wrap">
     <div class="contents">
@@ -28,6 +38,9 @@
         <div class="panel">
             <span class="header-buttons">
                 <a href="/" class="btn btn-primary launch-button">Launch</a>
+                <a class="hamburger btn btn-flat" onclick="openNav()">
+                  <i class="fas fa-bars"></i>
+                </a>
             </span>
         </div>
     </div>
@@ -142,13 +155,28 @@
         </div>
         <div class="social">
           <a class="social-link facebook" target="_blank" href="https://www.facebook.com/mathbymiles">
-            <img src="https://mathbymiles.com/uploads/default/original/1X/67b108b050a27c73fc7a7b970015e75f0655e764.svg">
+            <i class="fab fa-facebook"></i>
           </a>
           <a class="social-link twitter" target="_blank" href="https://www.twitter.com/mathbymiles">
-            <img src="https://mathbymiles.com/uploads/default/original/1X/1a9a930cc91cb75903252235eef7a3a8e2a205dd.svg">
+            <i class="fab fa-twitter"></i>
           </a>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Script for hamburger menu on mobile -->
+<script type="text/javascript">
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("dim").style.display = "block";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("dim").style.display = "none";
+  }
+</script>
