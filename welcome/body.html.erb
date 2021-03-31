@@ -6,6 +6,8 @@
   <a href="/pub/become-a-tutor" class="links">become a tutor</a>
 </div>
 
+<div id=dim></div>
+
 <header class="landing-header">
   <div class="wrap">
     <div class="contents">
@@ -329,14 +331,13 @@
   /* Set the width of the side navigation to 250px */
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.body.style.zIndex = "10000";
+    document.getElementById("dim").style.display = "block";
   }
 
   /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.body.style.backgroundColor = "white";
+    document.getElementById("dim").style.display = "none";
   }
 </script>
 
