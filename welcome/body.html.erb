@@ -371,7 +371,7 @@
 <!-- Smooth scroll script -->
 <script>
   const navlink = document.getElementById('how-it-works-slide-in');
-  navlink.addEventListener("click", smoothscroll));
+  navlink.addEventListener("click", smoothscroll);
   function smoothscroll(event){
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
@@ -379,5 +379,5 @@
       top: document.querySelector(targetId).offsetTop,
       behavior: "smooth"
     })
-  }
+  };
 </script>
