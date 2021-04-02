@@ -92,7 +92,7 @@
       </span>
     </h2>
     <ul class="list">
-      <li class="item first" data-aos="zoom-in-up">
+      <li class="item first" id="first-monitor">
         <div class="counter first">1</div>
         <h3 class="subheading mobile">Sign up for a plan</h3>
         <div class="image first">
@@ -103,7 +103,7 @@
           <p class="description">Go the monthly or yearly route, whichever fits your needs. It's a fraction of the cost of normal tutors.</p>
         </div>
       </li>
-      <li class="item second" data-aos="zoom-in-up">
+      <li class="item second" id="second-monitor" data-aos="zoom-in-up">
         <div class="counter second">2</div>
         <h3 class="subheading mobile">Know what you want to learn</h3>
         <div class="image second">
@@ -114,7 +114,7 @@
           <p class="description">Do you need a sanity check on a quick calculation, or do you need long back-and-forth to deal with a complex problem? Start with figuring out what kind of help you need.</p>
         </div>
       </li>
-      <li class="item third" data-aos="zoom-in-up">
+      <li class="item third" id="third-monitor" data-aos="zoom-in-up">
         <div class="counter third">3</div>
         <h3 class="subheading mobile">Connect with an expert tutor</h3>
         <div class="image third">
@@ -125,7 +125,7 @@
           <p class="description">We’ll match you with tutors who specialize in your math subject areas, and are ready to help you right now.</p>
         </div>
       </li>
-      <li class="item fourth" data-aos="zoom-in-up">
+      <li class="item fourth" id="fourth-monitor" data-aos="zoom-in-up">
         <div class="counter fourth">4</div>
         <h3 class="subheading mobile">Get instant feedback</h3>
         <div class="image fourth">
@@ -136,7 +136,7 @@
           <p class="description">Work with the tutor in a live lesson question thread which can include the use of images and typed math directly in the editor. The tutor will stay with you until you’re satisfied that your question is answered!</p>
         </div>
       </li>
-      <li class="item fifth" data-aos="zoom-in-up">
+      <li class="item fifth" id="fifth-monitor" data-aos="zoom-in-up">
         <div class="counter fifth">5</div>
         <h3 class="subheading mobile">Ace homework and tests</h3>
         <div class="image fifth">
@@ -366,4 +366,7 @@
     easing: 'ease', // default easing for AOS animations
     once: true, // whether animation should happen only once - while scrolling down
   });
+</script>
+<script type="text/javascript">
+  document.getElementById('first-monitor').setAttribute('data-aos', 'zoom-in-up');
 </script>
