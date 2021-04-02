@@ -1,3 +1,5 @@
+alert('Hello World');
+
 /* Script for hamburger menu on mobile */
 // Set the width of the side navigation to 250px
 function openNav() {
