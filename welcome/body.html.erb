@@ -1,7 +1,7 @@
 <!-- Hamburger menu HTML for mobile-->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://mathbymiles.com/welcome#how-it-works" class="links" onclick="closeNav()">how it works</a>
+  <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+  <a href="https://mathbymiles.com/welcome#how-it-works" class="links" id="how-it-works-slide-in">how it works</a>
   <a href="/s/prod_J1IfcowxsGw8Fd" class="links">pricing</a>
   <a href="/pub/become-a-tutor" class="links">become a tutor</a>
 </div>
@@ -38,7 +38,7 @@
         <div class="panel">
             <span class="header-buttons">
                 <a href="/" class="btn btn-primary launch-button">Launch</a>
-                <a class="hamburger btn btn-flat" onclick="openNav()">
+                <a class="hamburger btn btn-flat" id="hamburger">
                   <i class="fas fa-bars"></i>
                 </a>
             </span>
@@ -353,6 +353,10 @@
     document.getElementById("mySidenav").style.borderWidth = "0px";
     document.getElementById("dim").style.display = "none";
   }
+
+  document.getElementById('hamburger').addEventListener('click', openNav);
+  document.getElementById('closebtn').addEventListener('click', closeNav);
+  document.getElementById('how-it-works-slide-in').addEventListener('click', closeNav);
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
