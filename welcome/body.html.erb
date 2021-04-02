@@ -367,3 +367,17 @@
     once: true, // whether animation should happen only once - while scrolling down
   });
 </script>
+
+<!-- Smooth scroll script -->
+<script>
+  const navlink = document.getElementById('how-it-works-slide-in');
+  navlink.addEventListener("click", smoothscroll));
+  function smoothscroll(event){
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href");
+    window.scrollTo({
+      top: document.querySelector(targetId).offsetTop,
+      behavior: "smooth"
+    })
+  }
+</script>
