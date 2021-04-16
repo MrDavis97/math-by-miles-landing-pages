@@ -288,7 +288,10 @@
 
 <!-- Changes the wording in the contact form -->
 <script type="text/javascript">
-  const body = document.getElementById('message');
 
+  const body = document.getElementById('message');
   body.setAttribute('placeholder', 'Tell us why you want to tutor for Math By Miles');
+
+  const sendButton = document.querySelector('submit-label');
+  sendButton.innerHTML('Submit');
 </script>
